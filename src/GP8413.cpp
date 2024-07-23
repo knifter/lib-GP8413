@@ -1,6 +1,6 @@
 #include "GP8413.h"
 
-#include "tools-log.h"
+// #include "tools-log.h"
 
 #define REG_CONFIG		0x01
 #define REG_DAC0		0x02
@@ -11,7 +11,7 @@ bool GP8413::begin(uint8_t address)
 {
 	if(!TwoWireDevice::begin(address))
 	{
-		ERROR("TwoWireDevice.begin() failed.");
+		// ERROR("TwoWireDevice.begin() failed.");
 		return false;
 	};
 
@@ -21,7 +21,7 @@ bool GP8413::begin(uint8_t address)
 	_wire.endTransmission();
 
 	writereg16_LM(REG_DAC0, (1 << 16)-1 );
-	DBG("last error = %s", last_error_text());
+	// DBG("last error = %s", last_error_text());
 
 	return last_error() == 0;
 };
