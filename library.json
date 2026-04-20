@@ -1,0 +1,28 @@
+{
+  "name": "lib-GP8413",
+  "version": "1.0.0",
+  "description": "Arduino driver for the GP8413 dual-channel 15-bit DAC over I2C. Supports 0–5 V and 0–10 V output ranges on two independent channels. Wraps lib-TwoWireDevice.",
+  "keywords": ["dac", "gp8413", "i2c", "analog output", "esp32", "arduino"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knifter/lib-GP8413"
+  },
+  "authors": {
+    "name": "Tijs van Roon",
+    "url": "https://github.com/knifter",
+    "maintainer": true
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/knifter/lib-GP8413",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "dependencies": [
+    {
+      "name": "lib-TwoWireDevice",
+      "version": "https://github.com/knifter/lib-TwoWireDevice"
+    }
+  ],
+  "build": {
+    "srcDir": "src"
+  }
+}
